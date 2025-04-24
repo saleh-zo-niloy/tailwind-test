@@ -1,6 +1,6 @@
 {
   "name": "library-project",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve comsumer",
@@ -9,7 +9,7 @@
     "test": "ng test",
     "lib:build": "ng build library-project",
     "lib:watch": "ng build library-project --watch --configuration development",
-    "prepare": "ng build library-project"
+    "prepare": "npm run lib:build"
   },
   "private": true,
   "dependencies": {

@@ -1,6 +1,9 @@
 {
   "name": "library-project",
   "version": "0.0.1",
+  "main": "dist/library-project/fesm2022/library-project.mjs",
+  "module": "dist/library-project/fesm2022/library-project.mjs",
+  "typings": "dist/library-project/index.d.ts",
   "scripts": {
     "ng": "ng",
     "start": "ng serve comsumer",

@@ -3,39 +3,6 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tailwind-testing": {
-      "projectType": "library",
-      "root": "projects/tailwind-testing",
-      "sourceRoot": "projects/tailwind-testing/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "project": "projects/tailwind-testing/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/tailwind-testing/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "projects/tailwind-testing/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "tsConfig": "projects/tailwind-testing/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
-          }
-        }
-      }
-    },
     "comsumer": {
       "projectType": "application",
       "schematics": {
@@ -53,9 +20,7 @@
             "outputPath": "dist/comsumer",
             "index": "projects/comsumer/src/index.html",
             "browser": "projects/comsumer/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/comsumer/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -64,9 +29,7 @@
                 "input": "projects/comsumer/public"
               }
             ],
-            "styles": [
-              "projects/comsumer/src/styles.scss"
-            ],
+            "styles": ["projects/comsumer/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -111,10 +74,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/comsumer/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -123,9 +83,7 @@
                 "input": "projects/comsumer/public"
               }
             ],
-            "styles": [
-              "projects/comsumer/src/styles.scss"
-            ],
+            "styles": ["projects/comsumer/src/styles.scss"],
             "scripts": []
           }
         }
@@ -156,10 +114,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/library-project/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }

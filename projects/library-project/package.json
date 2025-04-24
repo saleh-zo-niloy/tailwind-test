@@ -12,9 +12,6 @@
     "@angular/core": "^19.2.0"
   },
   "dependencies": {
-    "@angular/cli": "^18.2.10",
-    "ng-packagr": "^18.2.0",
-    "typescript": "~5.5.2",
     "tslib": "^2.3.0"
   }
 }

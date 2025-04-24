@@ -1,6 +1,20 @@
 {
   "name": "library-project",
   "version": "0.0.1",
+  "main": "fesm2022/library-project.mjs",
+  "module": "fesm2022/library-project.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/library-project.mjs",
+      "esm": "./esm2022/library-project.mjs",
+      "default": "./fesm2022/library-project.mjs"
+    }
+  },
+  "scripts": {
+    "prepare": "npx ng build library-project"
+  },
   "peerDependencies": {
     "@angular/common": "^19.2.0",
     "@angular/core": "^19.2.0"

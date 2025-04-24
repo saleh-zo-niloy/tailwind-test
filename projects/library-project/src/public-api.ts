@@ -1,5 +1,5 @@
 /*
- * Public API Surface of tailwind-testing
+ * Public API Surface of library-project
  */
 
 export * from './lib/components/button/button.component';

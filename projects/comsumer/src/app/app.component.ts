@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ButtonComponent } from 'tailwind-testing';
+import { ButtonComponent } from 'library-project';
 
 @Component({
   selector: 'app-root',

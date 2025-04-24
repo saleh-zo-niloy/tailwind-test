@@ -17,6 +17,9 @@
     "importHelpers": true,
     "target": "ES2022",
     "paths": {
+      "library-project": [
+        "./dist/library-project"
+      ],
       "tailwind-testing": [
         "./dist/tailwind-testing"
       ]
